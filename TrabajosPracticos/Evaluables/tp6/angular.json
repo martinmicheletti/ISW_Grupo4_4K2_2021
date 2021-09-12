@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TP6-ISW-GRUPO2": {
+    "TP6-ISW-GRUPO4": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,16 +13,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/TP6-ISW-GRUPO2",
+            "outputPath": "dist/TP6-ISW-GRUPO4",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
@@ -64,18 +61,18 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "open": true,
-            "browserTarget": "TP6-ISW-GRUPO2:build"
+            "browserTarget": "TP6-ISW-GRUPO4:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "TP6-ISW-GRUPO2:build:production"
+              "browserTarget": "TP6-ISW-GRUPO4:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TP6-ISW-GRUPO2:build"
+            "browserTarget": "TP6-ISW-GRUPO4:build"
           }
         },
         "test": {
@@ -85,10 +82,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
@@ -104,27 +98,25 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "TP6-ISW-GRUPO2:serve"
+            "devServerTarget": "TP6-ISW-GRUPO4:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "TP6-ISW-GRUPO2:serve:production"
+              "devServerTarget": "TP6-ISW-GRUPO4:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "TP6-ISW-GRUPO2",
+  "defaultProject": "TP6-ISW-GRUPO4",
   "cli": {
     "analytics": false
   }

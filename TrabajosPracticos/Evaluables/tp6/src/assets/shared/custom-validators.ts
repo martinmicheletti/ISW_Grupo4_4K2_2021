@@ -47,6 +47,12 @@ export class CustomValidators {
     }
     return DECIMAL_REGEXP.test(control.value) ? null : {number: true};
   }
+  public static vuelto(control: AbstractControl): ValidationErrors | null {
+    if (isEmpty(control.value)) {
+      return null;
+    }
+    return control.value > 100 ? null : {vuelto:true};
+  }
 
   public static decimalNumberWithTwoDigits(control: AbstractControl): ValidationErrors | null {
     if (isEmpty(control.value)) {
@@ -389,7 +395,9 @@ export class ErrorMessages {
       toDate: `${validatorValue.textValue}: ${validatorValue.requiredValue}.`,
       fromDate: `${validatorValue.textValue}: ${validatorValue.requiredValue}.`,
       document: 'Ingresar un documento valido.',
-      visa: 'La tarjeta no corresponde a una VISA.'
+      visa: 'La tarjeta no corresponde a una VISA.',
+      vuelto:"Debe ser mayor al monto a pagar"
+
     };
     return config[validatorName];
   }

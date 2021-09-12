@@ -56,6 +56,7 @@ export class StepConfirmationComponent implements OnInit {
   public controlFecha() {
 
     var fechaHoy = new Date();
+    fechaHoy.setHours(fechaHoy.getHours() + 3)
     var ban = true;
     this.dateDelivery.valueChanges.subscribe(valor => {
 

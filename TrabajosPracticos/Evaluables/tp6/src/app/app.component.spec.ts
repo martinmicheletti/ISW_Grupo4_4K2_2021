@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'TP6-ISW-GRUPO2'`, () => {
+  it(`should have as title 'TP6-ISW-GRUPO4'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('TP6-ISW-GRUPO2');
+    expect(app.title).toEqual('TP6-ISW-GRUPO4');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('TP6-ISW-GRUPO2 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('TP6-ISW-GRUPO4 app is running!');
   });
 });

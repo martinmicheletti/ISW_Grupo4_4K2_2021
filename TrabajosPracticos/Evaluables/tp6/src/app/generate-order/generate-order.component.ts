@@ -39,7 +39,7 @@ export class GenerateOrderComponent implements OnInit {
 
     this.secondFormGroup = this._formBuilder.group({
       paymentMethod: ['', Validators.required],
-      paymentAmount: ['', Validators.required],
+      paymentAmount: ['',Validators.compose([ Validators.required, CustomValidators.vuelto])],
       cardNumber: ['', Validators.compose([ Validators.required, CustomValidators.number, CustomValidators.validVisa])],
       nameLastName:['', Validators.compose([ CustomValidators.validText])],
       expiredDate:[''],

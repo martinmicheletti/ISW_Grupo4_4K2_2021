@@ -47,19 +47,22 @@ export class StepPaymentComponent implements OnInit {
 
    public mes = 0;
    public anio = 0;
+   monto = 100;
+   vuelto = 0;
   constructor(private fb: FormBuilder,
     private dialog: MatDialog) { }
 
   ngOnInit(): void {
 
     this.validacionFormaPago();
+    this.Vuelto();
     
   }
 
   public validacionFormaPago(){
     this.paymentMethod.valueChanges.subscribe(valor=>{
       if (valor == 'Efectivo'){
-        this.paymentAmount.setValidators([Validators.required, CustomValidators.decimalNumberWithTwoDigits]);
+        this.paymentAmount.setValidators([Validators.required, CustomValidators.decimalNumberWithTwoDigits, CustomValidators.vuelto]);
   
         this.cardNumber.clearValidators();
         this.cardNumber.updateValueAndValidity();
@@ -70,7 +73,7 @@ export class StepPaymentComponent implements OnInit {
         this.expiredDate.clearValidators();
         this.expiredDate.updateValueAndValidity();
 
-
+     
       }else{
         this.paymentAmount.clearValidators();
         this.paymentAmount.updateValueAndValidity();
@@ -81,6 +84,16 @@ export class StepPaymentComponent implements OnInit {
 
       }
     })
+  }
+
+  public Vuelto(){
+    this.paymentAmount.valueChanges.subscribe(valor =>{
+      if(valor >= this.monto){
+        this.vuelto = valor - this.monto
+      }       
+        })
+      
+
   }
 
 

@@ -11,16 +11,14 @@ import { Producto } from './model/producto';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'TP6-ISW-GRUPO2';
+  title = 'TP6-ISW-GRUPO4';
 
   public carrito = new Cart();
 
   constructor(public dialog: MatDialog) {}
   ngOnInit(): void {
-    this.carrito.productos.push(new Producto(1, 'item 1'));
-    this.carrito.productos.push(new Producto(1, 'item 2'));
-    this.carrito.productos.push(new Producto(2, 'item 1'));
-    this.carrito.productos.push(new Producto(2, 'item 2'));
+    this.carrito.productos.push(new Producto(1, 'Producto 1'));
+    this.carrito.productos.push(new Producto(1, 'Producto 2'));
   }
 
   public openCart() {

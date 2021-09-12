@@ -4,6 +4,9 @@
   </mat-card-title>
   <mat-card-content>
     <form [formGroup]="stepForm">
+      <div class='mt-4'>
+        Monto a pagar: ${{this.monto}}
+      </div>
 
       <div class="col-12 padding-left-0 margin-top">
         <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
@@ -19,10 +22,13 @@
         <div class="row">
           <div class="col-12 padding-left-0">
             <mat-form-field appearance="standard" class="col-12">
-              <mat-label>Con cuanto paga?</mat-label>
-              <input matInput placeholder="" formControlName="paymentAmount">
+              <mat-label>Con cuanto abona?</mat-label>
+              <input matInput placeholder="" formControlName="paymentAmount" autocomplete="off">
             </mat-form-field>
-            <control-messages [control]="paymentAmount"></control-messages>            
+            <control-messages [control]="paymentAmount"></control-messages>
+          </div>
+          <div class='col-12' *ngIf='this.vuelto > 0'>
+            Su vuelto será: ${{this.vuelto}}
           </div>
         </div>
       </div>
@@ -44,7 +50,7 @@
               <mat-label>Nombre y apellido del titular de la tarjeta</mat-label>
               <input matInput placeholder="nombre y apellido" formControlName="nameLastName">
             </mat-form-field>
-            <control-messages [control]="nameLastName"></control-messages>            
+            <control-messages [control]="nameLastName"></control-messages>
 
           </div>
         </div>
@@ -56,20 +62,17 @@
               <mat-label>Fec Vencimiento</mat-label>
               <input matInput [matDatepicker]="expiredDate" formControlName="expiredDate">
               <mat-datepicker-toggle matSuffix [for]="expiredDate"></mat-datepicker-toggle>
-              <mat-datepicker #expiredDate
-                              startView="multi-year"
-                              (yearSelected)="chosenYearHandler($event)"
-                              (monthSelected)="chosenMonthHandler($event, expiredDate)"
-                              panelClass="example-month-picker">
+              <mat-datepicker #expiredDate startView="multi-year" (yearSelected)="chosenYearHandler($event)"
+                (monthSelected)="chosenMonthHandler($event, expiredDate)" panelClass="example-month-picker">
               </mat-datepicker>
-            
+
             </mat-form-field>
 
             <mat-form-field appearance="standard" class="col-4">
               <mat-label>CVC</mat-label>
               <input matInput placeholder="xxx" formControlName="cvc">
             </mat-form-field>
-            <control-messages [control]="cvc"></control-messages>            
+            <control-messages [control]="cvc"></control-messages>
 
           </div>
         </div>
