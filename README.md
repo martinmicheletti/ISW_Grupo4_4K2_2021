@@ -23,6 +23,24 @@
 - Piemonte, Juan Pablo - 75950
 - Quinteros, Manuel - 79558
 
+### Estructura del repositorio
+
+```
+ ISW_Grupo4_4K2_2021
+    ├── MaterialSoporte
+    |    ├── Bibliografia
+    │    ├── PresentacionesClases
+    │    ├── Templates
+    │    ├── Guias
+    │    
+    └── TrabajosPracticos
+    │    ├── Evaluables
+    │    └── NoEvaluables
+    └── TrabajosConceptuales
+    └── README.md
+```
+
+
 ### Ítems de configuración
 
 | Nombre del item | Regla de nombrado | Ruta de acceso |
