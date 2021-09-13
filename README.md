@@ -27,8 +27,8 @@
 
 | Nombre del item | Regla de nombrado | Ruta de acceso |
 | :--: | :--: | :--: |
-| Reglamento/Lineamiento/Protocolo | ISW_RLP_<año>_<nombre-documento>.pdf | /MaterialSoporte |
-| Libro | ISW_LIBRO_<nombre-libro>_<nombre-autor>.pdf | /Bibliografía |
+| Reglamento/Lineamiento/Protocolo | ISW_RLP_\<año>\_\<nombre-documento>\.pdf | /MaterialSoporte |
+| Libro | ISW_LIBRO_\<nombre-libro>\_\<nombre-autor>\.pdf | /Bibliografía |
 | Filmina | ISW_FILMINA_<año>_<nro-filmina>_<tema-filmina>.pdf | /MaterialSoporte/PresentacionesClases |
 | Trabajo Práctico No Evaluable | ISW_TPNE_<año>_<nro-tp>_<nombre-tp>.pdf | /TrabajosPracticos/NoEvaluables |
 | Trabajo Práctico Evaluable | ISW_TPE_<año>_<nro-tp>_<nombre-tp>.(pdf | xlsx) | /TrabajosPracticos/Evaluables |
