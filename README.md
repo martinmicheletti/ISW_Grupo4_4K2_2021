@@ -36,3 +36,28 @@
 | Guia de trabajos | ISW_GUIA_\<año>\_\<nombre-guia>\.pdf | /MaterialSoporte/Guias |
 | Templates para Parciales | ISW_Temp_\<año>\_\<nombre-template>\.docx/.xlsx | /MaterialSoporte/Templates |
 | Material soporte para parciales | ISW_MSP_\<nombre-documento>\.pdf | /MaterialSoporte |
+
+### Glosario
+
+| Sigla | Significado |
+| :--: | :--: |
+| \<año>\ | Año origen del documento. Nomenclatura de 4 cifras Ej: 2021,2020 |
+| \<nombre-documento>\ | Nombre de cada uno de los documentos |
+| \<nombre-guia>\ | Nombre de tipo de guia Ej: trabajos_conceptua, practicos_resueltos, practicos_enunciado |
+| \<nombre-template>\ | nombre template ej: primer_parcial, segundo_parcial |
+| \<nro-tp>\ | Número de tp utilizando dos cifra Ej: 01, 14 |
+| \<nombre-tp>\ | Cadena de texto con el nombre correspondiente al trabajo práctico |
+| \<nro-filmina>\ | Número cardinal de dos cifras Ej: 01.14 |
+| ISW | Ingeniería de Software |
+| TPC | Trabajo Práctico Conceptual |
+| TPE | Trabajo Práctico Evaluable |
+| TPNE | Trabajo Práctico No Evaluable |
+| RLP | Reglamento/Lineamiento/Protocolo |
+| MSP | Material de soporte |
+
+
+
+
+
+
+
