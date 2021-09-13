@@ -22,3 +22,9 @@
 - Montuori, Pietro - 79064
 - Piemonte, Juan Pablo - 75950
 - Quinteros, Manuel - 79558
+
+### Ítems de configuración
+
+| Nombre del item | Regla de nombrado | Ruta de acceso |
+| :--: | :--: | :--: |
+| Reglamento/Lineamiento | ISW_RL_\<nombre-documento\>.pdf | Cursado/Reglamento y Lineamientos |
