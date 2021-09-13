@@ -52,6 +52,7 @@
 | TPC | Trabajo Práctico Conceptual |
 | TPE | Trabajo Práctico Evaluable |
 | TPNE | Trabajo Práctico No Evaluable |
+| Temp | Termplate |
 | RLP | Reglamento/Lineamiento/Protocolo |
 | MSP | Material de soporte |
 
