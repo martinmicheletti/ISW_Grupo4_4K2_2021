@@ -4,6 +4,8 @@
 
 ### Universidad Tecnológica Nacional - Facultad Regional Córdoba
 
+Repositorio publico utilizado para aplicar los conceptos de administración de configuración de software
+
 ### Curso: 4k2
 
 ### Grupo: 04
