@@ -20,6 +20,8 @@ export class CartModalComponent {
     public dialogRef: MatDialogRef<CartModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Cart) {
       this.vendedor1 = data.productos.filter(i => i.idVendedor === 1);
+      console.log(this.vendedor1)
+
     }
 
   closeModal(): void {

@@ -51,7 +51,7 @@ export class CustomValidators {
     if (isEmpty(control.value)) {
       return null;
     }
-    return control.value > 100 ? null : {vuelto:true};
+    return control.value >= 100 ? null : {vuelto:true};
   }
 
   public static decimalNumberWithTwoDigits(control: AbstractControl): ValidationErrors | null {

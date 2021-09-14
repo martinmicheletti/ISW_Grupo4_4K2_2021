@@ -17,8 +17,8 @@ export class AppComponent implements OnInit{
 
   constructor(public dialog: MatDialog) {}
   ngOnInit(): void {
-    this.carrito.productos.push(new Producto(1, 'Producto 1'));
-    this.carrito.productos.push(new Producto(1, 'Producto 2'));
+    this.carrito.productos.push(new Producto(1, 'Viña del Balbo $60','local_bar'));
+    this.carrito.productos.push(new Producto(1, 'Pritty Limón $40', 'store'));
   }
 
   public openCart() {
