@@ -1,0 +1,58 @@
+<mat-horizontal-stepper labelPosition="bottom" #stepper linear>
+
+  <mat-step [editable]="noConfirmo" [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel><span class="material-icons">
+          house
+        </span></ng-template>
+      <app-step-address [stepForm]="firstFormGroup"></app-step-address>
+      <div class="float text-right">
+        <button mat-raised-button matStepperNext class="margin-top button-color"
+          [disabled]="firstFormGroup.invalid">Continuar</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [editable]="noConfirmo" [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel><span class="material-icons">
+          attach_money
+        </span></ng-template>
+      <app-step-payment [stepForm]="secondFormGroup"></app-step-payment>
+      <div class="row">
+        <div class="col-6">
+          <button mat-raised-button matStepperPrevious class="margin-top btn-rollback">Atrás</button>
+        </div>
+        <div class="col-6 text-right">
+          <button mat-raised-button matStepperNext class="margin-top button-color"
+            [disabled]="secondFormGroup.invalid">Continuar</button>
+        </div>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [editable]="noConfirmo">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel><span class="material-icons">
+          moped
+        </span></ng-template>
+      <app-step-confirmation [stepForm]="thirdFormGroup"></app-step-confirmation>
+      <div class="row">
+        <div class="col-6">
+          <button mat-raised-button matStepperPrevious class="margin-top btn-rollback">Atrás</button>
+        </div>
+        <div class="col-6 text-right">
+          <button mat-raised-button class="margin-top button-color" (click)="confirmarCompra()"
+            [disabled]="thirdFormGroup.invalid">Confirmar</button>
+        </div>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel><span class="material-icons">
+        add_task
+      </span></ng-template>
+    <app-step-ready></app-step-ready>
+  </mat-step>
+</mat-horizontal-stepper>

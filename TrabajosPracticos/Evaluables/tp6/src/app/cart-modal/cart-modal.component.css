@@ -1,0 +1,15 @@
+.mat-icon {
+    color: red ;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+span>.mat-icon{
+    color:blue
+}
+
+

@@ -1,0 +1,24 @@
+.margin-top {
+    margin-top: 30px;
+}
+
+.button-color{
+  background-color: #6F2DBD;
+  color: #B9FAF8;
+}
+
+.customFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 0%;
+    align-content: center;
+  }
+  
+  button {
+    margin: 5px;  
+  }
+  .btn-rollback{
+    background-color: #B9FAF8;
+  }
+
+ 
